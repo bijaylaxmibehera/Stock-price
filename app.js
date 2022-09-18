@@ -21,19 +21,19 @@ function calculateProfitAndLoss(initial, quantity, current) {
         //loss
         const loss=(initial-current)*quantity;
         const lossPercentage= (loss/initial)*100;
-        // showOutput('Whoops!!Your loss is ${loss} and percentage is ${lossPercentage}')
         outputBox.innerText="Whoops!!Your loss is "+loss+" and percentage is "+lossPercentage+"%";
-
+        outputBox.style.color="red";
     } else if (current > initial) {
         //profit
         const profit= (current-initial)*quantity;
         const profitPercentage=(profit/initial)*100;
         outputBox.innerText="Yay!! Your Profit is "+profit+" and percentage is "+profitPercentage+"%";
 
-       
+        outputBox.style.color="green";
     } else {
         //no loss no profit
         outputBox.innerText="No pain No gain, and no gain no pain :)";
+        outputBox.style.color="white";
     }
 }
 // function showOutput(msg){
