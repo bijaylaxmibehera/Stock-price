@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stocks</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
     <div id="left-side">
-        <h1>Stocks</h1>
-        <label for="initial-price">
-            <input type="number" id="initial-price" placeholder="Enter the initial price">
-        </label>
-        <label for="stock-quantity">
-            <input type="number" id="stock-quantity" placeholder="Enter the stock quantity">
-        </label>
-        <label for="current-price">
-            <input type="number" id="current-price" placeholder="Enter the current price">
-        </label>
-        <button id="check-btn">Tell me!</button>
+      <h1>Stocks</h1>
+      <label for="initial-price">
+        <input
+          type="number"
+          id="initial-price"
+          placeholder="Enter the initial price"
+        />
+      </label>
+      <label for="stock-quantity">
+        <input
+          type="number"
+          id="stock-quantity"
+          placeholder="Enter the stock quantity"
+        />
+      </label>
+      <label for="current-price">
+        <input
+          type="number"
+          id="current-price"
+          placeholder="Enter the current price"
+        />
+      </label>
+      <button id="check-btn">Tell me!</button>
     </div>
     <div id="right-side">
-        <div id="output-box"></div>
+      <div id="output-box"></div>
     </div>
-    
-</body>
-<script src="app.js"></script>
+</main>
+  </body>
+  <script src="app.js"></script>
 </html>
