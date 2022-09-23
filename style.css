@@ -2,8 +2,8 @@
 :root{
     --primary-color: #f3f3f3;
     --black-900: #1e2025;
-    --blue-600: #2563eb;
-    --black-800: #22252a;
+    --blue-600: #4c5df8;
+    --dark-gray: #363636;
 
 }
 *{
@@ -11,15 +11,18 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    /* background-color:#ebeef0; */
+    background-color:var(--dark-gray);
     font-size: larger;
-    color: var(--primary-color);
+    
 }
 main{
+    margin: auto;
+    max-width: 80%;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center
 }
-.left-side{
+/* .left-side{
     width: 50%;
     text-align: center;
     padding-top: 25vh;
@@ -33,9 +36,10 @@ main{
     background-color: var(--black-900);
     padding-left:2rem;
     
-}
+} */
 h1{
    color: var(--blue-600);
+   margin-top: 2rem;
 }
 label{
     display: block;
@@ -45,9 +49,8 @@ label{
 input{
     padding: 1rem;
     font-size: large;
-    background-color: var(--black-900);
-    border: 2px solid var(--black-900);
-    color: var(--primary-color);
+    border: 2px solid var(--blue-600);
+    border-radius: 9px;
 }
 button{
     background-color: var(--blue-600);
@@ -56,4 +59,9 @@ button{
     font-size: 1.2rem;
     border: 2px solid var(--blue-600);
     border-radius: 9px;
+}
+#output-box{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1.5rem;
 }
