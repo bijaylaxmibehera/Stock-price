@@ -19,14 +19,14 @@ function checkHandler(){
 function calculateProfitAndLoss(initial, quantity, current) {
     if (initial > current) {
         //loss
-        const loss=(initial-current)*quantity;
-        const lossPercentage= (loss/initial)*100;
+        const loss=(initial-current);
+        const lossPercentage= ((loss/initial)*100).toFixed(2);
         outputBox.innerText="Whoops!!Your loss is "+loss+" and percentage is "+lossPercentage+"%";
         outputBox.style.color="red";
     } else if (current > initial) {
         //profit
-        const profit= (current-initial)*quantity;
-        const profitPercentage=(profit/initial)*100;
+        const profit= (current-initial);
+        const profitPercentage=((profit/initial)*100).toFixed(2);
         outputBox.innerText="Yay!! Your Profit is "+profit+" and percentage is "+profitPercentage+"%";
 
         outputBox.style.color="green";
